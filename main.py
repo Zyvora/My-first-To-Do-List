@@ -11,9 +11,9 @@ def main():
         action = int(input('Введите номер операции: '))
         if action == 1:
             todo.add_task(input('Введите задачу: '))
-        if action == 2:
+        elif action == 2:
             todo.get_task()
-        if action == 3:
+        elif action == 3:
             todo.del_task(int(input('Введите номер задачи: ')))
         else:
             print('Неверная операция!')
