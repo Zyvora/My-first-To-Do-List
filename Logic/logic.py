@@ -6,6 +6,8 @@ class ToDoList:
         self.__task.append(task)
 
     def get_task(self):
+        if len(self.__task) == 0:
+            print('Нет задач')
         for i, task in enumerate(self.__task, 1):
             print(f'{i}: "{task}"')
 
